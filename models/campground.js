@@ -3,8 +3,9 @@ const Schema = mongoose.Schema;
 
 const CampgroudSchema = new Schema({
     title: String,
+    image: String,
     zoo: String,
-    name: String,
+    description: String,
     location: String
 });
 
