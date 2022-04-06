@@ -26,9 +26,21 @@ const seedDB = async () => {
             author: '624c79e4ba45b221dae28680',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/45967841',
+            // image: 'https://source.unsplash.com/collection/45967841',
             description: 'Cutest animal in the world!',
-            zoo: ''
+            zoo: '',
+            images: [
+                {
+                  url: 'https://res.cloudinary.com/dzvbiofv3/image/upload/v1649286315/RedPandaCamp/pvt52eizh4gmenokywh7.jpg',
+                  filename: 'RedPandaCamp/pvt52eizh4gmenokywh7'
+                  
+                },
+                {
+                  url: 'https://res.cloudinary.com/dzvbiofv3/image/upload/v1649286315/RedPandaCamp/esphynx4ifgted8pmdia.jpg',
+                  filename: 'RedPandaCamp/esphynx4ifgted8pmdia'
+                  
+                }
+              ]
         })
         await camp.save();
     }
