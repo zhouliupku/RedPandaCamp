@@ -29,6 +29,10 @@ const seedDB = async () => {
             // image: 'https://source.unsplash.com/collection/45967841',
             description: 'Cutest animal in the world!',
             zoo: '',
+            geometry: { 
+                type: 'Point', 
+                coordinates: [ -71.0596, 42.3605 ] 
+            },
             images: [
                 {
                   url: 'https://res.cloudinary.com/dzvbiofv3/image/upload/v1649286315/RedPandaCamp/pvt52eizh4gmenokywh7.jpg',
