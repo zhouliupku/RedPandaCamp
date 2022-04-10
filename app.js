@@ -23,8 +23,12 @@ const reviewRoutes = require('./routes/reviews');
 
 const mongoSanitize = require('express-mongo-sanitize');
 
+const MongoDBStore = require("connect-mongo")(session);
+// const MongoDBStore = require("connect-mongo");
 
-mongoose.connect('mongodb://localhost:27017/redpanda-camp', {
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/redpanda-camp';
+// const dbUrl = 'mongodb://localhost:27017/redpanda-camp';
+mongoose.connect(dbUrl, {
     //useNewUrlParser: true,
     //useCreateIndex: true,
     useUnifiedTopology: true,
@@ -50,9 +54,23 @@ app.use(mongoSanitize({
     replaceWith: '_'
 }))
 
+const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
+
+const store = new MongoDBStore({
+    url: dbUrl,
+    secret,
+    touchAfter: 24 * 60 * 60
+});
+
+store.on("error", function (e) {
+    console.log("SESSION STORE ERROR", e)
+})
+
 const sessionConfig = {
+    store,
     name: 'session',
-    secret: 'thisshouldbeabettersecret!',
+    secret,
+    // secret: 'thisshouldbeabettersecret!',
     resave: false,
     saveUninitialized: true,
     cookie: {
@@ -101,8 +119,8 @@ app.use((err, req, res, next) => {
 })
 
 
+const port = process.env.PORT || 3000;
 
-
-app.listen(3000, () => {
-    console.log('Serving on 3000')
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`)
 })
