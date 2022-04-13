@@ -13,3 +13,9 @@ Join us!
 
 ![image](https://user-images.githubusercontent.com/36254120/163081198-b7c7da9e-87eb-4b38-a85f-9a4f2e6a2531.png)
 
+Want to register? Right now!
+
+![image](https://user-images.githubusercontent.com/36254120/163088175-eb6867e0-d298-47ba-938c-8b7beb661042.png)
+
+
+
