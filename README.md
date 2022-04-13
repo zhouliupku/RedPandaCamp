@@ -18,11 +18,17 @@ Want to register? Right now!
 ![image](https://user-images.githubusercontent.com/36254120/163088175-eb6867e0-d298-47ba-938c-8b7beb661042.png)
 
 Already have an account?
+
 Login!
+
 ![image](https://user-images.githubusercontent.com/36254120/163088260-af25a8d1-b5f8-4807-bd23-7d4661941cc2.png)
+
 Post your red panda collection!
+
 ![image](https://user-images.githubusercontent.com/36254120/163088399-3148d136-fc40-47d5-ba4f-927a95ab5913.png)
+
 Comment on other red pandas!
+
 ![image](https://user-images.githubusercontent.com/36254120/163088375-412ba03b-5535-4f44-854c-2de641cbaf3a.png)
 
 
