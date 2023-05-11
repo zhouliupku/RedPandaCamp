@@ -1,6 +1,6 @@
 # RedPandaCamp
 
-Website: https://zhouzhouredpandacamp.herokuapp.com/
+Website: https://zhouzhou-redpanda.herokuapp.com/
 (If error occured, reload it!! :)
 
 ![image](https://user-images.githubusercontent.com/36254120/163080957-45f5e162-cb85-47fe-8088-2816e756ddfe.png)
